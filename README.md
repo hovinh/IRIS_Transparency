@@ -12,13 +12,13 @@ IRIS dataset is famous for its popularity in AI literature. Though its simplicit
 To justify the correctness of the claim, I have make several plots cover all possible combinatorial sets of 1, 2 and 3 features. As it shows in Figure 1 and 2, *Iris Setosa* is entirely distinguishable when taking into account of merely ``Petal Length`` feature, but there is no clear cut boundary for the other 2, even in 3-dimensional feature space. It's worth noting that thanks to small number of features and value range, it is feasible to conduct sampling-based experimen on this dataset.
 
 <p align="center">
-  <img src="../images/IRIS_plot_2D.png">
+  <img src="images/IRIS_plot_2D.png">
   <br><br>
   <b>Figure 1: Plot of singular feature and pair-wise features of 3 classes of instances</b><br>
 </p>
 
 <p align="center">
-  <img src="../images/IRIS_plot_3D.png">
+  <img src="images/IRIS_plot_3D.png">
   <br><br>
   <b>Figure 2: Plot of all possible combinations when chosing 3 out of 4 features</b><br>
 </p>
@@ -37,7 +37,7 @@ For our goal is observing QII value distributions across different layers, the n
 Given above conditions, we construct a neural network has architecture as in Figure 3. It's worth noting that one can achieve 100% accuracy with following structures: ``1000`` > ``800`` > ``600``. However, with a simpler architecture, we can obtain approximated global optimum within 100 epochs.
 
 <p align="center">
-  <img src="../images/NN_Architecture.png">
+  <img src="images/NN_Architecture.png">
   <br><br>
   <b>Figure 3: Architecture of Neural Network used in experiment setting</b><br>
 </p>
