@@ -69,13 +69,14 @@ class IRISDataset(object):
 
         plt.show()
     
-def test_case_1():
+def proper_use():
     dataset = IRISDataset()
+    # Plot all pair-wise combinations of features
     dataset.plot_2D()
+    # Plot all 3-wise combinations of features
     dataset.plot_3D()
     X_test, X_train, y_test, y_train = dataset.split_to_train_test(seed=30)
-    print (y_train)
     print (dataset._dataset.columns.values)
     
 if __name__ == '__main__':
-    test_case_1()
+    proper_use()
