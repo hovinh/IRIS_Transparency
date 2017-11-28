@@ -1,2 +1,2 @@
-model_checkpoint_path: "C:\\Users\\workshop\\Documents\\IRIS_Transparency\\source\\saved_model_01"
-all_model_checkpoint_paths: "C:\\Users\\workshop\\Documents\\IRIS_Transparency\\source\\saved_model_01"
+model_checkpoint_path: "C:\\Users\\workshop\\Documents\\IRIS_Transparency\\source\\saved_model"
+all_model_checkpoint_paths: "C:\\Users\\workshop\\Documents\\IRIS_Transparency\\source\\saved_model"
