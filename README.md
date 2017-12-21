@@ -133,7 +133,10 @@ A successful mapback requires 3 parameters:
 - Map back technique: current layer do matrix multiplicative operation to transposed (``trans``) or inversed (``inv``) weights that connects to previous layer. One can interprete the operation with transpose matrix as distributing the score proportionally to weights value to previous layer. Besides, we can preprocess the weight before doing that with ``softmax`` (normalize weight to probabilty distribution form), ``shift`` (shift all value to positive side such that lowest value is 0) or both - ``shift_softmax``. The intuition behind shift is that even though if obtained Shapley/Banzhaf value is negative, one can simply shift them to positive side, to show that any agent in coalition always contribute something. 
 
 Table below show all variants we could obtain by combining all three factors.
-
+<p align="center">
+  <img src="images/mapback_table.png">
+</p>
+<!---
 ||Keep Assigment|Ranking Assignment|Normalized Assigment||
 |-|-:|-:|-:|-:|-:|
 |**QII - no change**|no_keep_trans|no_rank_trans|no_norm_trans|**Map-transpose**|
@@ -146,6 +149,7 @@ Table below show all variants we could obtain by combining all three factors.
 |**QII - diff**|diff_keep_softmax|diff_rank_softmax|diff_norm_softmax|**Map-softmax**|
 |**QII - diff**|diff_keep_shift|diff_rank_shift|diff_norm_shift|**Map-shift**|
 |**QII - diff**|diff_keep_shift_softmax|diff_rank_shift_softmax|diff_norm_shift_softmax|**Map-shift_softmax**|
+-->
 
 
 ### Shapley - Banzhaf Comparison   
